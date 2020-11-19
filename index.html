@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>Nashville Software School</title>
+        <title>Daily Journal - Gregory Thompson</title>
         <link rel="stylesheet" href="./styles/main.css">
     </head>
 
@@ -20,22 +20,45 @@
         </header>
 
         <main id="container">
-            <article class="form">
-                <date class="date">
-
-                </date>
-                <text class="concepts">
-
-                </text>
-                <textarea name="Journal Entry" id="journal_entry" cols="30" rows="10"></textarea>
-                <select name="moods" id="">
-                    <div>Happy</div>
-                    <div>Optimistic</div>
-                    <div>Frustrated</div>
-                    <div>Clueless</div>
-                </select>
-                <button class="submit">Record Journal Entry</button>
-            </article>
+            <h2>Daily Journal</h2>
+            <section class="top">
+                <form action=""> <!-- Date Box -->
+                    <fieldset>
+                        <label for="journalDate">Date of Entry:</label>
+                        <input type="date" name="journalDate" id="journalDate">
+                    </fieldset>
+                </form>
+                <form action=""> <!-- Small Box for concepts-->
+                    <fieldset>
+                        <label for="journalConcepts">Concepts Covered:</label>
+                        <input type="text">
+                    </fieldset>
+                </form>
+                <form action=""> <!-- drop down box for selecting mood -->
+                    <fieldset>
+                     <label for="journalMood">Mood for the Day:</label>
+                        <select name="moods" id="moods">
+                            <option value="Happy">Happy</option>
+                            <option value="Optimistic">Optimistic</option>
+                            <option value="Frustrated">Frustrated</option>
+                            <option value="Clueless">Clueless</option>
+                        </select>
+                 </fieldset>
+                </form>
+            </section>  
+            <section class="middle">
+                <form action=""> <!-- Journal Entry box for paragraphs -->
+                    <fieldset>
+                        <label for="journalEntry">Journal Entry:</label>
+                        <textarea name="journalEntry" id="paragraphs" cols="30" rows="10"></textarea>
+                    </fieldset>
+                </form>
+            </section>
+            <section class="bottom">
+                <form action=""> <!-- Button used to record entry -->
+                    <button>Record Journal Entry</button>
+                </form>
+            </section>
             <article class="list">
                 <list class="list__entries">
                     <div class="entry"></div>
@@ -43,6 +66,7 @@
 
             </article>
         </main>
+        
         <footer class="info">
             <div class="name"></div>
             <div class="copyright"></div>
