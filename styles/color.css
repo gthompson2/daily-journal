@@ -1,0 +1,39 @@
+/**
+* Color palette:
+* magnolia: #F5F1F9
+* aero blue: #B8F2E6
+* blue sapphire: #035E7B
+* oxford blue: #020035
+* dark purple: #351431
+*/
+
+body {
+    background-color: #B8F2E6;
+}
+
+textarea,
+input,
+select,
+button {
+    color: #351431;
+	background-color: #F5F1F9;
+}
+
+h1,h2 {
+    color: #035E7B;
+}
+
+h3,h4,h5,h6 {
+    color: #020035;
+}
+
+form {
+    color: #020035;
+}
+.info {
+    background-color: #F5F1F9;
+}
+
+.entryTitle {
+    color: #351431;
+}

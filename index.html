@@ -8,19 +8,21 @@
 
     <body>
         <header>
-            <div>
-                <img src="" alt="logo">
-            </div>
-            <div>
-                <h1>Daily Dev Journal</h1>
-            </div>
-            <div>
-                <h2>Gregory Thompson</h2>
-            </div>
+            <section class="headline">
+                <div>
+                    <img src="./images/logo.png" alt="logo">
+                </div>
+                <div class="headline__title">
+                    <h1>Daily Dev Journal</h1>
+                </div>
+                <div>
+                    <h3>by: Gregory Thompson</h3>
+                </div>
+            </section>
         </header>
 
         <main id="container">
-            <h2>Daily Journal</h2>
+            <h3>Journal Entry Form:</h3>
             <section class="top">
                 <form action=""> <!-- Date Box -->
                     <fieldset>
@@ -59,10 +61,8 @@
                     <button>Record Journal Entry</button>
                 </form>
             </section>
-            <article class="list">
-                <list class="list__entries">
-                    <div class="entry"></div>
-                </list>
+            <article class="list" id="entryLog">
+                
 
             </article>
         </main>
